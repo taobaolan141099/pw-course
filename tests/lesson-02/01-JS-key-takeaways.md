@@ -3,6 +3,7 @@ Console.log() //Dùng để Print ra 1 nội dung nào đó mà mình cần
 var: có thể khai báo biến mọi kiểu dữ liệu như boolean, string, number, v.v.v   
     // Var cũng có thể khai báo lại nhiều lần vd: var x = 1; var x = 2;
     // Phạm vi của var khi khai báo trong biến có thể log ra khi ra khỏi biến
+
 let: Có thể cập nhật lại giá trị của biến chứ không cho phép tái khái báo lại biến đó. 
     // Phạm vi của var khi khai báo trong biến khi ra khỏi biến thì sẽ không log được
     // Nên dùng let khi cần chắc chắn gán lại giá trị nào đó
@@ -20,13 +21,19 @@ Các kiểu dữ liệu
     BigInt
 
 Các toán tử 
-    + - * /
+    + - * / > < >= <=
+
     ! //khác
-    > < >= <=
+    
     ==  //Dữ liệu sẽ tự chuyển đổi kiểu dữ liệu để so sánh
+    
     === //Dữ liệu không thể tự chuyển đổi kiểu dữ liệu để so sánh
+    
     && và
+    
     || hoặc
+    
     ++x; tăng trước rồi mới log
+    
     x++; log trước r mới tăng
 
