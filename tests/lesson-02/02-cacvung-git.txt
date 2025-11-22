@@ -1,0 +1,23 @@
+a. Tạo 3 file: file1, file2, file3  
+    - Cả 3 file đều đang ở Working Directory
+
+b. Chạy lệnh: git init 
+    - Git được tạo 
+    - Cả 3 file Vẫn ở Working Directory
+
+c. Chạy lệnh: git commit -m”init project” 
+    - Command vẫn sẽ chạy nhưng commit sẽ trống vì không có file nào được add vào Staging area trước đó
+    - Cả 3 file vẫn ở Working Directory
+
+d. Chạy lệnh: git add file1 
+    - file1 được add vào Staging Area
+    - file2, file3 vẫn ở Working Directory
+
+e. Chạy lệnh: git commit -m”add file1” 
+    - file1 được push lên Repo vì đã được add vào Staging area trước đó. Và commit có tên là add file1
+    - file2, file3 vẫn ở Working Directory
+
+f. Chạy lệnh: git commit -m”add file”
+    - Command vẫn sẽ chạy nhưng commit sẽ trống vì không có file nào được add vào Staging area trước đó
+    - file1 đang ở Repo với commit có tên là add file1
+    - file2, file3 vẫn đang ở Working Directory

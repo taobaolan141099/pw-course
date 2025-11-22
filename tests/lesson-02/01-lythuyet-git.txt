@@ -1,0 +1,5 @@
+    git init  //Dùng để khởi tạo nơi lưu trữ, Chỉ cần nhập 1 lần khi mở lại working area
+    git add .  //Dùng để add hết các file đã được chỉnh sửa ở lần này vào staging area
+    git add Tên file // Dùng để add 1 file cần thiết lên staging area 
+            // VD: git add 00-Git-key-takeaway.md
+            // VD: Nếu muốn add 1 lúc 2 file thì git add 00-Git-key-takeaway.md 01-JS-key-takeaways.md
