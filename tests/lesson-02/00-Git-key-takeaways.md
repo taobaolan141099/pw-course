@@ -42,7 +42,3 @@ git status
 
 git log 
 - Dùng để check các commit đã được commit lên repo trước 
- 
- 
-    
-
