@@ -1,11 +1,3 @@
-git: là Version Control System
- 
-git remote add origin <url> 
-- Dùng để liên kết với repo trên GitHub. Chỉ cần chạy lần đầu tiên
-
-git config user.name "Lan Tao" 
-- Dùng để hiện tên của mình ở project, để những ngkhac biết mình là ai
-
 git config user.email "Lantao@test.com" 
 - Dùng để hiện email của mình ở, để những ngkhac biết mình là ai
 
