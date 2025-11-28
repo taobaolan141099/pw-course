@@ -1,4 +1,4 @@
-let myName = "Alex"; 
-myName = "Nagi"; 
+let myName = "Alex";
+myName = "Nagi";
 
 console.log(myName); 

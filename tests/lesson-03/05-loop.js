@@ -7,35 +7,41 @@ for (let i = 0; i < 101; i++) {
 console.log(sum);
 
 //2. In bảng cửu chương từ 2 đến 9. 
-let BangCuuChuong = [];
+
+let bangCuuChuong = [];
 let dum = 0;
 for (let i = 2; i < 10; i++) {
     for (let x = 2; x < 10; x++) {
+        if (x === 2) {
+            bangCuuChuong.push(`Bảng cửu chương số ${i}: `)
+        }
         dum = i * x;
-        BangCuuChuong.push(dum);
+        bangCuuChuong.push(dum);
+        if (x === 9) {
+            bangCuuChuong.push('\n')
+        }
     }
 }
-console.log(BangCuuChuong);
+console.log(bangCuuChuong.join(" "));
 
 //3. Tạo một mảng chứa các số lẻ từ 1 đến 99.
-let MangSoLe = [];
+let mangSoLe = [];
 for (let i = 0; i < 100; i++) {
     if (i % 2 === 1) {
-        MangSoLe.push(i)
+        mangSoLe.push(i)
     }
 }
-console.log(MangSoLe);
+console.log(mangSoLe);
 
 //4. In ra 10 email dựa trên tên người dùng và số thứ tự
-for (let i=0; i<15;i++)
-{
+for (let i = 0; i < 15; i++) {
     console.log(`user${i}@example.com`);
 }
 
 //5. Tính tổng doanh thu của 12 tháng trong năm dựa trên mảng doanh thu đã cho và in ra tổng doanh thu. 
 // Biết cấu trúc object của mảng doanh thu như sau: {“month”: 2, “total”: 100} 
 
-let DoanhThu = [ //Tạo mảng chứa các tháng và doanh thu của tháng
+let doanhThu = [ //Tạo mảng chứa các tháng và doanh thu của tháng
     { month: 1, total: 25 },
     { month: 2, total: 20 },
     { month: 3, total: 40 },
@@ -50,8 +56,8 @@ let DoanhThu = [ //Tạo mảng chứa các tháng và doanh thu của tháng
     { month: 12, total: 91 }
 ]
 
-let TongDoanhThu = 0;
-for (let i = 0; i < DoanhThu.length; i++) {
-    TongDoanhThu = TongDoanhThu + DoanhThu[i].total
+let tongDoanhThu = 0;
+for (let i = 0; i < doanhThu.length; i++) {
+    tongDoanhThu = tongDoanhThu + doanhThu[i].total
 }
-console.log(TongDoanhThu);
+console.log(tongDoanhThu);
