@@ -72,6 +72,6 @@ let contract = {
     rate: 10,
     years: 3
 }
-let TotalAmount = calculateInterest(contract.principal, contract.rate, contract.years);
+let totalAmount = calculateInterest(contract.principal, contract.rate, contract.years);
 
-console.log(`Tiền gửi ban đầu: ${contract.principal}, Lãi suất hàng năm: ${contract.rate}, Thời hạn: ${contract.years}. Tổng số tiền phải trả: ${TotalAmount}`)
+console.log(`Tiền gửi ban đầu: ${contract.principal}, Lãi suất hàng năm: ${contract.rate}, Thời hạn: ${contract.years}. Tổng số tiền phải trả: ${totalAmount}`)
