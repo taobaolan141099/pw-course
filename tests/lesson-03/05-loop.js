@@ -7,15 +7,22 @@ for (let i = 0; i < 101; i++) {
 console.log(sum);
 
 //2. In bảng cửu chương từ 2 đến 9. 
+
 let BangCuuChuong = [];
 let dum = 0;
 for (let i = 2; i < 10; i++) {
     for (let x = 2; x < 10; x++) {
+        if (x === 2) {
+            BangCuuChuong.push(`Bảng cửu chương số ${i}: `)
+        }
         dum = i * x;
         BangCuuChuong.push(dum);
+        if (x === 9) {
+            BangCuuChuong.push('\n')
+        }
     }
 }
-console.log(BangCuuChuong);
+console.log(BangCuuChuong.join(" "));
 
 //3. Tạo một mảng chứa các số lẻ từ 1 đến 99.
 let MangSoLe = [];
@@ -27,8 +34,7 @@ for (let i = 0; i < 100; i++) {
 console.log(MangSoLe);
 
 //4. In ra 10 email dựa trên tên người dùng và số thứ tự
-for (let i=0; i<15;i++)
-{
+for (let i = 0; i < 15; i++) {
     console.log(`user${i}@example.com`);
 }
 
