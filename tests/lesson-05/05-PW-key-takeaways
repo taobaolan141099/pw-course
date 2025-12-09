@@ -1,0 +1,53 @@
+DOM: Viết tắt của Document Object Model. Nó được mô hình hóa 1 trang web dưới đạng HTML/XML
+- thẻ mở 
+<option> 
+
+- thẻ đóng
+</option>
+
+- Một element
+<option value= "usa">United State</option>
+
+- thẻ tự đóng
+<img src="image.jpg" alt="Image description"/>
+
+Các thẻ tiêu chuẩn thường gặp
+Thẻ Cấu Trúc Cơ Bản
+● <html>: Thẻ gốc của trang
+● <head>: Chứa metadata: tiêu đề website, hiển thị Google
+● <body>: Nội dung của cả website hiển thị
+● <div>: Khối/container chung
+● <span>: Inline container
+● <header>, <footer>, <nav>, <section>: Thẻ ngữ nghĩa
+Thẻ Nội Dung:
+● <h1> đến <h6>: Tiêu đề
+● <p>: Đoạn văn
+● <a>: Liên kết
+● <img>: Hình ảnh
+● <ul>, <ol>, <li>: Danh sách
+Thẻ Form (Quan trọng cho Testing):
+● <form>: Biểu mẫu
+● <input>: Ô nhập liệu (text, password, checkbox, radio, etc.)
+● <button>: Nút bấm
+● <select> và <option>: Dropdown
+● <textarea>: Vùng văn bản nhiều dòng   
+
+
+có 3 dạng selector, mức độ ưu tiên
+Playwright selector > CSS Selector > XPath
+
+XPath là viết tắt của XML Path
+Có 2 loại:
+○ Tuyệt đối: đi dọc theo cây DOM
+    bắt đầu bởi 1 /
+    VD cách lấy XPath tuyệt đối: /html/body/div/a
+Chỉ nên sử dụng đối với các project đang maintain không thay đổi thuộc tính quá nhiều vì khi có thay đổi có thể phải thay đổi lại thuộc tính khá nhiều và mất thời gian
+
+○ Tương đối: tìm dựa vào đặc tính
+    bắt đầu bởi 2 //
+    //tenthe[@thuoctinh=”gia tri”]
+    VD cách lấy XPath tương đối: //a[@target="_blank"]
+Nên xài vì dễ lấy Xpath dễ maintain
+
+<ratio>: Đối với ratio thì 1 khi đã chọn 1 trong các option rồi thì sẽ không thể chọn các option khác. 
+<checkbox>: Đối với checkbox thì 1 khi đã chọn 1 checkbox để setceck rồi mà setcheck lại lần nữa thì nó sẽ không update thành false 

@@ -1,0 +1,43 @@
+1. Cấu trúc DOM cơ bản của một trang web bao gồm các thẻ gì?
+
+Các thẻ tiêu chuẩn
+- Thẻ Cấu Trúc Cơ Bản
+<html>: Thẻ gốc của trang
+<head>: Chứa metadata: tiêu đề website, hiển thị Google
+<body>: Nội dung của cả website hiển thị
+<div>: Khối/container chung
+<span>: Inline container
+<header>, <footer>, <nav>, <section>: Thẻ ngữ nghĩa
+
+- Thẻ Nội Dung:
+<h1> đến <h6>: Tiêu đề
+<p>: Đoạn văn
+<a>: Liên kết
+<img>: Hình ảnh
+<ul>, <ol>, <li>: Danh sách
+
+- Thẻ Form (Quan trọng cho Testing):
+<form>: Biểu mẫu
+<input>: Ô nhập liệu (text, password, checkbox, radio, etc.)
+<button>: Nút bấm
+<select> và <option>: Dropdown
+<textarea>: Vùng văn bản nhiều dòng   
+
+2. Hãy mô tả cấu trúc html của 1 bảng (table) 
+
+<header>: Nhóm phần nội dung tiêu đề của bảng.
+<body>: Nhóm phần nội dung chính (thân) của bảng.
+<footer>: Nhóm phần nội dung chân trang của bảng.
+
+Ví dụ 1 dom của website bất kì
+<header>
+    <...>
+    <title></title>
+    <...>
+</header>
+<body>
+    <div ...>
+    <div ...>
+    <div ...>
+</body>
+<footer>
